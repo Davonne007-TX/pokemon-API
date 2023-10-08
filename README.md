@@ -1,2 +1,1 @@
-#Pokemon
-#API
+#Pokemon API Project
