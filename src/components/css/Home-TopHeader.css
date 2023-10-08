@@ -9,17 +9,35 @@
 h1 {
   font-family: "Pokemon Solid", sans-serif;
   color: #ffde00;
+  cursor: pointer;
 }
 
 .login-logout {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
-  font-family: "Pokemon Solid", sans-serif;
-  color: #ffde00;
+  font-family: sans-serif;
+  color: white;
 }
 
 p:hover {
+  color: #ffde00;
+  cursor: pointer;
+}
+
+nav,
+a {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 16pt;
   color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+nav,
+a:hover {
+  color: #ffde00;
   cursor: pointer;
 }
