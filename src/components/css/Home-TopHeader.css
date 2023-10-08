@@ -1,0 +1,25 @@
+/* home component */
+.catchThemAll {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+h1 {
+  font-family: "Pokemon Solid", sans-serif;
+  color: #ffde00;
+}
+
+.login-logout {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  font-family: "Pokemon Solid", sans-serif;
+  color: #ffde00;
+}
+
+p:hover {
+  color: white;
+  cursor: pointer;
+}
