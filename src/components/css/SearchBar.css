@@ -2,10 +2,10 @@
 .searchBar {
   margin-top: 40px;
   font-size: 16pt;
-  color: black;
   display: flex;
   justify-content: center;
   padding: 20px;
+  margin-top: 160px;
 }
 
 input {
@@ -13,6 +13,7 @@ input {
   font-size: 14pt;
   padding: 10px;
   outline: none;
+  border-color: #ffde00;
   caret-color: 3b4cca;
   font-family: monospace;
 }

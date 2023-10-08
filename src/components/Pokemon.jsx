@@ -48,19 +48,25 @@ export function Pokemon() {
   return (
     <>
       {allPokemonData.length > 0 && (
-        <div className="pokemon-container" key="pokemon.url">
+        <>
           <SearchBar
             value={searchedPokemon}
             setSearchedPokemon={setSearchedPokemon}
           />
-          {filteredPokemon.map((pokemon) => (
-            <MainPokemon
-              key={pokemon.name}
-              name={pokemon.name}
-              image={pokemon.image}
-            />
-          ))}
-        </div>
+          <div className="pokemon-container" key="pokemon.url">
+            {/* <SearchBar
+            value={searchedPokemon}
+            setSearchedPokemon={setSearchedPokemon}
+          /> */}
+            {filteredPokemon.map((pokemon) => (
+              <MainPokemon
+                key={pokemon.name}
+                name={pokemon.name}
+                image={pokemon.image}
+              />
+            ))}
+          </div>
+        </>
       )}
     </>
   );
