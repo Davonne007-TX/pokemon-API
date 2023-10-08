@@ -1,9 +1,10 @@
 import React from "react";
+import { SearchBar } from "./SearchBar";
 
 export function Pokemon() {
   return (
     <>
-      <div>Pokemon</div>
+      <SearchBar />
     </>
   );
 }

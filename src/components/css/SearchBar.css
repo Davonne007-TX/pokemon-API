@@ -1,0 +1,8 @@
+/*search bar*/
+.searchBar {
+  margin-top: 40px;
+  font-size: 16pt;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
