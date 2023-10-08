@@ -1,0 +1,8 @@
+/*pokemon component*/
+.pokemon-container {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 200px;
+  background-image: url("/images/sky.jpg");
+  border-radius: 20px;
+}

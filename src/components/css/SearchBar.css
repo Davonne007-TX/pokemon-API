@@ -2,7 +2,17 @@
 .searchBar {
   margin-top: 40px;
   font-size: 16pt;
-  color: white;
+  color: black;
   display: flex;
   justify-content: center;
+  padding: 20px;
+}
+
+input {
+  border-radius: 20px;
+  font-size: 14pt;
+  padding: 10px;
+  outline: none;
+  caret-color: 3b4cca;
+  font-family: monospace;
 }
