@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function MainPokemon({ name, image }) {
+export function MainPokemon({ name, image }) {
   return (
     <div>
       <h2>{name.toUpperCase()}</h2>

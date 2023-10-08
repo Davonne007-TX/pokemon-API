@@ -1,10 +1,13 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { SearchBar } from "./SearchBar";
+import { MainPokemon } from "./MainPokemon";
 import "./css/Pokemon.css";
 
 export function Pokemon() {
   const [allPokemonData, setAllPokemonData] = useState([]);
+  const [searchedPokemon, setSearchedPokemon] = useState("");
+  const [filteredPokemon, setFilteredPokemon] = useState([]);
 
   const getPokemon = async () => {
     try {
@@ -25,6 +28,7 @@ export function Pokemon() {
       });
       const updatedPokemon = await Promise.all(promises);
       setAllPokemonData(updatedPokemon);
+      setFilteredPokemon(updatedPokemon);
     } catch (error) {
       console.error("Error:", error);
     }
@@ -34,9 +38,30 @@ export function Pokemon() {
     getPokemon();
   }, []);
 
+  useEffect(() => {
+    const filteredPokemon = allPokemonData.filter((pokemon) =>
+      pokemon.name.toLowerCase().includes(searchedPokemon.toLowerCase())
+    );
+    setFilteredPokemon(filteredPokemon);
+  }, [searchedPokemon, allPokemonData]);
+
   return (
-    <div className="pokemon-container">
-      <SearchBar />
-    </div>
+    <>
+      {allPokemonData.length > 0 && (
+        <div className="pokemon-container" key="pokemon.url">
+          <SearchBar
+            value={searchedPokemon}
+            setSearchedPokemon={setSearchedPokemon}
+          />
+          {filteredPokemon.map((pokemon) => (
+            <MainPokemon
+              key={pokemon.name}
+              name={pokemon.name}
+              image={pokemon.image}
+            />
+          ))}
+        </div>
+      )}
+    </>
   );
 }
