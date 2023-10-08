@@ -2,8 +2,16 @@
 .catchThemAll {
   width: 100%;
   max-width: 1000px;
-  margin-top: 20px;
+  margin-top: 200px;
   border-radius: 20px;
+}
+
+.top-header {
+  background-color: #3b4cca;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 h1 {
@@ -16,12 +24,13 @@ h1 {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
-  font-family: sans-serif;
-  color: white;
+  font-family: "Pokemon Solid", sans-serif;
+  color: #ffde00;
+  margin-right: 20px;
 }
 
 p:hover {
-  color: #ffde00;
+  color: white;
   cursor: pointer;
 }
 
@@ -34,6 +43,7 @@ a {
   color: white;
   text-decoration: none;
   font-family: sans-serif;
+  margin-bottom: 10px;
 }
 
 nav,
