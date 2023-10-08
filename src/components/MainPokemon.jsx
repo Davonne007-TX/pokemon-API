@@ -10,11 +10,13 @@ export function MainPokemon({ name, image }) {
       </div>
       <div>
         {" "}
-        <img src={image} />
+        <img src={image} className="pokemon-image" />
       </div>
       <div>
         {" "}
-        <button>See Details</button>
+        <button type="button" className="seeDetails">
+          See Details
+        </button>
       </div>
     </div>
   );

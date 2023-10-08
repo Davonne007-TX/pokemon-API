@@ -15,13 +15,39 @@
 
 /*mainPokemon component*/
 .our-pokemon {
-  background-color: white;
+  background-image: url("/images/sky.jpg");
+  background-repeat: no-repeat;
   border: 2px solid #ffde00;
-  width: 420px;
+  width: 300px;
+  height: 400px;
   display: block;
+  padding: 90px;
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
   margin-bottom: 25px;
+}
+
+h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+  font-size: 22pt;
+}
+
+.pokemon-image {
+  width: 100%;
+}
+
+.seeDetails {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #3b4cca;
+  color: white;
+}
+
+.seeDetails:hover {
+  color: #ffde00;
+  cursor: pointer;
 }
