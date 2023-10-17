@@ -8,6 +8,7 @@ import { Tournament } from "./components/Tournament";
 import { Profile } from "./components/Profile";
 import { Shop } from "./components/Shop";
 import "./App.css";
+import SinglePokemon from "./components/SinglePokemon";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/tournament" element={<Tournament />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/singlePokemon" element={<SinglePokemon />} />
       </Routes>
     </>
   );

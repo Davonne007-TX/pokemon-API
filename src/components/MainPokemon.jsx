@@ -1,7 +1,14 @@
 import React from "react";
 import "./css/Pokemon.css";
+import { useNavigate } from "react-router-dom";
 
 export function MainPokemon({ name, image }) {
+  const navigate = useNavigate();
+
+  function pokemonDetails() {
+    navigate("/singlePokemon");
+  }
+
   return (
     <div className="our-pokemon">
       <div>
@@ -14,7 +21,7 @@ export function MainPokemon({ name, image }) {
       </div>
       <div>
         {" "}
-        <button type="button" className="seeDetails">
+        <button type="button" className="seeDetails" onClick={pokemonDetails}>
           See Details
         </button>
       </div>
