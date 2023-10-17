@@ -11,6 +11,7 @@ import "./App.css";
 import SinglePokemon from "./components/SinglePokemon";
 
 function App() {
+  const [selectedPokemon, setSelectedPokemon] = useState(null);
   return (
     <>
       <TopHeader />

@@ -15,7 +15,6 @@ export function Pokemon() {
         "https://pokeapi.co/api/v2/pokemon?limit=30"
       );
       const data = await response.json();
-      console.log(data);
 
       const promises = data.results.map(async (pokemon) => {
         const pokemonResponse = await fetch(pokemon.url);
