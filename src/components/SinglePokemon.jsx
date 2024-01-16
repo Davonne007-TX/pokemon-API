@@ -4,6 +4,7 @@ export default function SinglePokemon({ pokemon }) {
   const [singlePokemon, setSinglePokemon] = useState("");
 
   useEffect(() => {
+    console.log("Selected Pokemon:", pokemon);
     if (pokemon) {
       setSinglePokemon(pokemon);
     }

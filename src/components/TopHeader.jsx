@@ -20,7 +20,7 @@ export default function TopHeader() {
       <h1 onClick={goToHomePage}>Pokemon For Life</h1>
 
       <nav>
-        <Link to="/pokemon">Pokemon</Link>
+        <Link to="/pokemon">Pokédex</Link>
       </nav>
     </div>
   );
