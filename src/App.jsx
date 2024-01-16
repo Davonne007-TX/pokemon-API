@@ -4,8 +4,6 @@ import { Home } from "./components/Home";
 import TopHeader from "./components/TopHeader";
 import Login from "./components/Login";
 import { Pokemon } from "./components/Pokemon";
-
-import { Shop } from "./components/Shop";
 import "./App.css";
 import SinglePokemon from "./components/SinglePokemon";
 
@@ -20,18 +18,12 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route
           path="/pokemon"
-          element={<Pokemon setSelectedPokemon={selectedPokemon} />}
+          element={<Pokemon setSelectedPokemon={setSelectedPokemon} />}
         />
 
-        <Route path="/shop" element={<Shop />} />
         <Route
           path="/singlePokemon"
-          element={
-            <SinglePokemon
-              setSelectedPokemon={setSelectedPokemon}
-              pokemon={selectedPokemon}
-            />
-          }
+          element={<SinglePokemon pokemon={selectedPokemon} />}
         />
       </Routes>
     </>

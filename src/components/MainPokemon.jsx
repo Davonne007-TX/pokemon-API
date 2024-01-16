@@ -2,10 +2,11 @@ import React from "react";
 import "./css/Pokemon.css";
 import { useNavigate } from "react-router-dom";
 
-export function MainPokemon({ name, image }) {
+export function MainPokemon({ name, image, setSelectedPokemon }) {
   const navigate = useNavigate();
 
   function pokemonDetails() {
+    setSelectedPokemon({ name, image });
     navigate("/singlePokemon");
   }
 

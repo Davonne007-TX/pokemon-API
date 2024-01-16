@@ -1,18 +1,23 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { fetchPokemonById } from "./API/api.jsx";
+import { useEffect, useState } from "react";
 
 export default function SinglePokemon({ pokemon }) {
+  const [singlePokemon, setSinglePokemon] = useState("");
+
+  useEffect(() => {
+    console.log("Received Pokemon:", pokemon);
+    if (pokemon) {
+      setSinglePokemon(pokemon);
+    }
+  }, [pokemon]);
+
   if (!pokemon) {
-    return <div>Pokemon is loading</div>;
+    return <div>Pokemon is loading...</div>;
   }
   return (
     <>
-      <h2 style={{ marginTop: "200px" }}>Selected Pokemon</h2>
-
-      <div className="single-pokemon-container">
-        <h3>{pokemon.name}</h3>
-        <img src={pokemon.image} />
+      <div>
+        <h2>{singlePokemon.name}</h2>
+        <img src={singlePokemon.image} alt="Pokemon Selected Image" />
       </div>
     </>
   );
