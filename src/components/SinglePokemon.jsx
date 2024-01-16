@@ -4,7 +4,6 @@ export default function SinglePokemon({ pokemon }) {
   const [singlePokemon, setSinglePokemon] = useState("");
 
   useEffect(() => {
-    console.log("Received Pokemon:", pokemon);
     if (pokemon) {
       setSinglePokemon(pokemon);
     }

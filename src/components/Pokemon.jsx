@@ -53,10 +53,6 @@ export function Pokemon({ setSelectedPokemon }) {
             setSearchedPokemon={setSearchedPokemon}
           />
           <div className="pokemon-container" key="pokemon.url">
-            {/* <SearchBar
-            value={searchedPokemon}
-            setSearchedPokemon={setSearchedPokemon}
-          /> */}
             {filteredPokemon.map((pokemon) => (
               <MainPokemon
                 key={pokemon.name}
