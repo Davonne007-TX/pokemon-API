@@ -4,7 +4,7 @@ import { SearchBar } from "./SearchBar";
 import { MainPokemon } from "./MainPokemon";
 import "./css/Pokemon.css";
 
-export function Pokemon() {
+export function Pokemon(setSelectedPokemon) {
   const [allPokemonData, setAllPokemonData] = useState([]);
   const [searchedPokemon, setSearchedPokemon] = useState("");
   const [filteredPokemon, setFilteredPokemon] = useState([]);
@@ -62,6 +62,7 @@ export function Pokemon() {
                 key={pokemon.name}
                 name={pokemon.name}
                 image={pokemon.image}
+                setSelectedPokemon={setSelectedPokemon}
               />
             ))}
           </div>

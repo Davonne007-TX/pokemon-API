@@ -21,9 +21,6 @@ export default function TopHeader() {
 
       <nav>
         <Link to="/pokemon">Pokemon</Link>
-        <Link to="/tournament">Tournament</Link>
-        <Link to="/profile">Profile</Link>
-        <Link to="/shop">Shop</Link>
       </nav>
     </div>
   );
