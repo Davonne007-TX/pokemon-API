@@ -8,10 +8,6 @@
 
 .top-header {
   background-color: #3b4cca;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 h1 {
@@ -20,13 +16,13 @@ h1 {
   cursor: pointer;
 }
 
+.h2 {
+  font-family: monospace;
+}
+
 .login-logout {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
   font-family: "Pokemon Solid", sans-serif;
   color: #ffde00;
-  margin-right: 20px;
 }
 
 p:hover {

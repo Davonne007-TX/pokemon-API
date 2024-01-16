@@ -13,14 +13,18 @@ export default function TopHeader() {
   }
   return (
     <div className="top-header">
-      <div className="login-logout">
+      <div className="login-logout flex flex-row ">
         <p onClick={goToLogin}>Login</p>
         <p>Logout</p>
       </div>
-      <h1 onClick={goToHomePage}>Pokemon For Life</h1>
+      <h1 onClick={goToHomePage} className="">
+        Pokemon For Life
+      </h1>
 
       <nav>
-        <Link to="/pokemon">Pokédex</Link>
+        <Link to="/pokemon" className="h2">
+          Pokédex
+        </Link>
       </nav>
     </div>
   );
