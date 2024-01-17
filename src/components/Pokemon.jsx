@@ -47,24 +47,29 @@ export function Pokemon({ setSelectedPokemon }) {
   return (
     <>
       {allPokemonData.length > 0 && (
-        <>
+        <div>
           <div className="max-w-xl mr-auto ml-auto ">
             <SearchBar
               value={searchedPokemon}
               setSearchedPokemon={setSearchedPokemon}
             />
           </div>
-          <div className="pokemon-container" key="pokemon.url">
-            {filteredPokemon.map((pokemon) => (
-              <MainPokemon
-                key={pokemon.name}
-                name={pokemon.name}
-                image={pokemon.image}
-                setSelectedPokemon={setSelectedPokemon}
-              />
-            ))}
+          <div className="flex justify-center items-center">
+            <div
+              className="pokemon-container flex flex-wrap bg-blueBright mt-10 border-8 border-bright gap-10 p-5"
+              key="pokemon.url"
+            >
+              {filteredPokemon.map((pokemon) => (
+                <MainPokemon
+                  key={pokemon.name}
+                  name={pokemon.name}
+                  image={pokemon.image}
+                  setSelectedPokemon={setSelectedPokemon}
+                />
+              ))}
+            </div>
           </div>
-        </>
+        </div>
       )}
     </>
   );

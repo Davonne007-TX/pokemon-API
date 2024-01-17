@@ -2,20 +2,10 @@
 .pokemon-container {
   width: 100%;
   max-width: 1200px;
-  margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
-  background-color: #3b4cca;
-  border: 5px solid #ffde00;
-  border-radius: 50px;
-  margin-bottom: 20px;
 }
 
 /*mainPokemon component*/
 .our-pokemon {
-  /* background-image: url("/images/sky.jpg"); */
   background-image: linear-gradient(#ffff, #3b4cca, #ffde00);
   background-repeat: no-repeat;
   border: 5px solid #ffde00;
@@ -32,27 +22,4 @@
 
 h2 {
   font-family: "Pokemon Solid", sans-serif;
-  color: black;
-  font-size: 18pt;
-}
-
-.pokemon-image {
-  width: 100%;
-  background-color: #ffde00;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-
-.seeDetails {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  padding: 12px;
-  border-radius: 10px;
-  background-color: #3b4cca;
-  color: black;
-  margin-top: 20px;
-}
-
-.seeDetails:hover {
-  color: #ffde00;
-  cursor: pointer;
 }

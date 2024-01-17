@@ -11,18 +11,22 @@ export function MainPokemon({ name, image, setSelectedPokemon }) {
   }
 
   return (
-    <div className="our-pokemon">
+    <div className="our-pokemon flex flex-col justify-center items-center">
       <div>
         {" "}
-        <h2>{name.toUpperCase()}</h2>
+        <h2 className="text-2xl">{name.toUpperCase()}</h2>
       </div>
       <div>
         {" "}
-        <img src={image} className="pokemon-image" />
+        <img src={image} className="bg-bright mt-10" />
       </div>
       <div>
         {" "}
-        <button type="button" className="seeDetails" onClick={pokemonDetails}>
+        <button
+          type="button"
+          className="seeDetails hover:text-bright mt-8 text-lg font-mono"
+          onClick={pokemonDetails}
+        >
           See Details
         </button>
       </div>

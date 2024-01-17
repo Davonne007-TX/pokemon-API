@@ -6,13 +6,13 @@ export function SearchBar({ value, setSearchedPokemon }) {
     setSearchedPokemon(inputSearch);
   };
   return (
-    <div className="mt-10 border-5 rounded-full p-2 font-mono">
+    <div className="mt-10 border-5 rounded-full p-2 font-mono flex justify-center">
       <input
         type="search"
         placeholder="Search For Pokemon"
         onChange={handleSearch}
         value={value}
-        className="focus:outline-none bg-"
+        className="focus:outline-none bg-bright p-2 rounded"
       />
     </div>
   );
