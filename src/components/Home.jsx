@@ -1,14 +1,14 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import "./css/Home-TopHeader.css";
 
 export function Home() {
   return (
     <>
-      <div className="flex justify-center items-center">
-        <img
-          src="/images/catchThemAll.jpg"
-          className="lg:max-w-6xl mt-10 rounded border-8 border-bright"
-        />
+      <div className="flex justify-center items-center bg-cover bg-no-repeat bg-center h-screen bg-image font-mono text-4xl">
+        <p className="mb-60">Select and Choose Your Pokemon</p>
+        <Link to="/pokemon" className="bg-bright text-md p-2 rounded-full">
+          Go..!
+        </Link>
       </div>
     </>
   );
