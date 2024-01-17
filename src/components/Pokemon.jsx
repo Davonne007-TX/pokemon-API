@@ -54,7 +54,7 @@ export function Pokemon({ setSelectedPokemon }) {
               setSearchedPokemon={setSearchedPokemon}
             />
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center mt-2">
             <div
               className="pokemon-container flex flex-wrap bg-blueBright mt-10 border-8 border-bright gap-10 p-5"
               key="pokemon.url"
