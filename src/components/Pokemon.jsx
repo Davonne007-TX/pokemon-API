@@ -48,10 +48,12 @@ export function Pokemon({ setSelectedPokemon }) {
     <>
       {allPokemonData.length > 0 && (
         <>
-          <SearchBar
-            value={searchedPokemon}
-            setSearchedPokemon={setSearchedPokemon}
-          />
+          <div className="max-w-xl mr-auto ml-auto ">
+            <SearchBar
+              value={searchedPokemon}
+              setSearchedPokemon={setSearchedPokemon}
+            />
+          </div>
           <div className="pokemon-container" key="pokemon.url">
             {filteredPokemon.map((pokemon) => (
               <MainPokemon

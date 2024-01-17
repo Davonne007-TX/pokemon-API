@@ -8,21 +8,19 @@ export default function TopHeader() {
     navigate("/");
   }
 
-  function goToLogin() {
-    navigate("/login");
-  }
   return (
     <>
-      <div className="flex flex-col mt-10 top-header w-full">
-        <h1 onClick={goToHomePage} className="text-4xl">
+      <div className="w-full">
+        <h1
+          onClick={goToHomePage}
+          className="text-4xl mb-8 animate-pulse hover:text-bright hover:underline cursor-pointer"
+        >
           Pokemon For Life
         </h1>
 
-        <nav>
-          <Link to="/pokemon" className="h2">
-            Pokédex
-          </Link>
-        </nav>
+        <Link to="/pokemon" className="h2 text-blueBright hover:text-bright">
+          Pokédex
+        </Link>
       </div>
     </>
   );

@@ -1,5 +1,4 @@
 import React from "react";
-import "./css/SearchBar.css";
 
 export function SearchBar({ value, setSearchedPokemon }) {
   const handleSearch = (e) => {
@@ -7,12 +6,13 @@ export function SearchBar({ value, setSearchedPokemon }) {
     setSearchedPokemon(inputSearch);
   };
   return (
-    <div className="searchBar">
+    <div className="mt-10 border-5 rounded-full p-2 font-mono">
       <input
         type="search"
         placeholder="Search For Pokemon"
         onChange={handleSearch}
         value={value}
+        className="focus:outline-none bg-"
       />
     </div>
   );

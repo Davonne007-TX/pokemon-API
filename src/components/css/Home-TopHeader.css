@@ -1,49 +1,13 @@
-.catchThemAll {
-  width: 100%;
-  max-width: 1000px;
-  margin-top: 200px;
-  border-radius: 20px;
-}
-
-.top-header {
-  background-color: #3b4cca;
-  width: 100%;
-}
-
 h1 {
   font-family: "Pokemon Solid", sans-serif;
-  color: #ffde00;
-  cursor: pointer;
 }
 
 .h2 {
-  font-family: monospace;
+  font-family: "Pokemon Solid", sans-serif;
+  letter-spacing: 4px;
 }
 
 .login-logout {
   font-family: "Pokemon Solid", sans-serif;
   color: #ffde00;
 }
-
-p:hover {
-  color: white;
-  cursor: pointer;
-}
-
-/* nav,
-a {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  font-size: 16pt;
-  color: white;
-  text-decoration: none;
-  font-family: sans-serif;
-  margin-bottom: 10px;
-} */
-
-/* nav,
-a:hover {
-  color: #ffde00;
-  cursor: pointer;
-} */
