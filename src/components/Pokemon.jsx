@@ -23,6 +23,9 @@ export function Pokemon({ setSelectedPokemon }) {
         return {
           name: pokemonData.name,
           image: pokemonData.sprites.front_default,
+          height: pokemonData.height,
+          weight: pokemonData.weight,
+          base_experience: pokemonData.base_experience,
         };
       });
       const updatedPokemon = await Promise.all(promises);
@@ -63,6 +66,9 @@ export function Pokemon({ setSelectedPokemon }) {
                 <MainPokemon
                   key={pokemon.name}
                   name={pokemon.name}
+                  height={pokemon.height}
+                  weight={pokemon.weight}
+                  base_experience={pokemon.base_experience}
                   image={pokemon.image}
                   setSelectedPokemon={setSelectedPokemon}
                 />
