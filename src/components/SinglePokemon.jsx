@@ -22,9 +22,9 @@ export default function SinglePokemon({ pokemon }) {
   }
   return (
     <>
-      <div className="flex justify-center items-center bg-gray-200 h-screen">
-        <div className="bg-bright w-5/12 rounded mb-40">
-          <div className="flex flex-col ml-5 mt-5 mb-5 ">
+      <div className="bg-image flex justify-center items-center h-screen bg-cover">
+        <div className="bg-bright w-full m-5 md:2/12 lg:w-4/12 rounded border-8 border-blueBright">
+          <div className="flex flex-col ml-5 mt-5 mb-5 font-mono">
             <h2 className="text-2xl mb-10">{singlePokemon.name}</h2>
             <p>Height:{singlePokemon.height}</p>
             <p>Weight:{singlePokemon.weight}</p>
@@ -33,7 +33,7 @@ export default function SinglePokemon({ pokemon }) {
               <img
                 src={singlePokemon.image}
                 alt="Pokemon Selected Image"
-                className="ml-60"
+                className="ml-80 lg:ml-64"
               />
             </div>
             <button

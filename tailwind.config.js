@@ -6,6 +6,7 @@ export default {
       colors: {
         bright: "#ffde00",
         blueBright: "#3b4cca;",
+        gradient: "",
       },
     },
   },
