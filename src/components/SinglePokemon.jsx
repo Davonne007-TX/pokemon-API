@@ -29,11 +29,11 @@ export default function SinglePokemon({ pokemon }) {
             <p>Height:{singlePokemon.height}</p>
             <p>Weight:{singlePokemon.weight}</p>
             <p>Base Experience: {singlePokemon.base_experience}</p>
-            <div className="flex flex-row">
+            <div className="flex flex-row ">
               <img
                 src={singlePokemon.image}
                 alt="Pokemon Selected Image"
-                className="ml-80 lg:ml-64"
+                className="ml-80 lg:ml-64 max-w-full h-auto"
               />
             </div>
             <button
