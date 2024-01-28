@@ -31,7 +31,7 @@ export function MainPokemon({
         {" "}
         <button
           type="button"
-          className="seeDetails hover:text-bright mt-8 text-lg font-mono"
+          className="hover:text-bright mt-8 text-lg font-mono"
           onClick={pokemonDetails}
         >
           See Details
