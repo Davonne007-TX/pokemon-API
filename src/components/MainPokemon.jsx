@@ -10,10 +10,13 @@ export function MainPokemon({
   weight,
   base_experience,
   backImage,
+  id,
+
 }) {
   const navigate = useNavigate();
 
   function pokemonDetails() {
+
     setSelectedPokemon({
       name,
       image,
@@ -21,7 +24,11 @@ export function MainPokemon({
       weight,
       base_experience,
       backImage,
+      id
     });
+
+    setSelectedPokemon({ name, image, height, weight, base_experience, id });
+
     navigate("/singlePokemon");
   }
 
