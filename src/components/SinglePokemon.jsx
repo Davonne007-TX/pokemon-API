@@ -33,7 +33,7 @@ export default function SinglePokemon({ pokemon }) {
               <img
                 src={singlePokemon.image}
                 alt="Pokemon Selected Image"
-                className="ml-80 lg:ml-64 max-w-full h-auto"
+                className="ml-36 md:ml-80 lg:ml-64 max-w-full h-auto"
               />
             </div>
             <button
