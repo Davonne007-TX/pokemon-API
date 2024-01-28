@@ -36,6 +36,8 @@ export function Pokemon({ setSelectedPokemon }) {
     }
   };
 
+  //useEffect and filtered Pokemon
+
   useEffect(() => {
     getPokemon();
   }, []);
