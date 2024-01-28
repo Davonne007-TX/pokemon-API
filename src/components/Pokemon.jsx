@@ -20,10 +20,12 @@ export function Pokemon({ setSelectedPokemon }) {
         const pokemonResponse = await fetch(pokemon.url);
         const pokemonData = await pokemonResponse.json();
         console.log("More Details:", pokemonData);
+
         return {
           name: pokemonData.name,
           image: pokemonData.sprites.front_shiny,
           backImage: pokemonData.sprites.back_shiny,
+
           height: pokemonData.height,
           weight: pokemonData.weight,
           base_experience: pokemonData.base_experience,
