@@ -29,6 +29,7 @@ export default function SinglePokemon({ pokemon }) {
             <p>Height:{singlePokemon.height}</p>
             <p>Weight:{singlePokemon.weight}</p>
             <p>Base Experience: {singlePokemon.base_experience}</p>
+            <p>ID:{singlePokemon.id}</p>
             <div className="flex flex-row ">
               <img
                 src={singlePokemon.image}

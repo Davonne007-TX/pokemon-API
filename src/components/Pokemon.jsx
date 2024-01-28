@@ -26,6 +26,7 @@ export function Pokemon({ setSelectedPokemon }) {
           height: pokemonData.height,
           weight: pokemonData.weight,
           base_experience: pokemonData.base_experience,
+          id: pokemonData.id,
         };
       });
       const updatedPokemon = await Promise.all(promises);
@@ -72,6 +73,7 @@ export function Pokemon({ setSelectedPokemon }) {
                   height={pokemon.height}
                   weight={pokemon.weight}
                   base_experience={pokemon.base_experience}
+                  id={pokemon.id}
                   image={pokemon.image}
                   setSelectedPokemon={setSelectedPokemon}
                 />
