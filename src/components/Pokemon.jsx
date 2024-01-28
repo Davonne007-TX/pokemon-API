@@ -25,7 +25,6 @@ export function Pokemon({ setSelectedPokemon }) {
           name: pokemonData.name,
           image: pokemonData.sprites.front_shiny,
           backImage: pokemonData.sprites.back_shiny,
-
           height: pokemonData.height,
           weight: pokemonData.weight,
           base_experience: pokemonData.base_experience,
@@ -41,7 +40,6 @@ export function Pokemon({ setSelectedPokemon }) {
   };
 
   //useEffect and filtered Pokemon
-
   useEffect(() => {
     getPokemon();
   }, []);

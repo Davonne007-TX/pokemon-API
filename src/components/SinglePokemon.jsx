@@ -25,7 +25,6 @@ export default function SinglePokemon({ pokemon }) {
       <div className="bg-image flex justify-center items-center h-screen bg-cover">
         <div className="bg-bright w-full m-5 md:2/12 lg:w-4/12 rounded border-8 border-blueBright">
           <div className="flex flex-col ml-5 mt-5 mb-5 font-mono">
-
             <div className="flex flex-row">
               <h2 className="text-4xl mb-10">{singlePokemon.name}</h2>
               <div className="ml-auto">
@@ -42,12 +41,6 @@ export default function SinglePokemon({ pokemon }) {
               <p>Weight:{singlePokemon.weight}</p>
               <p>Base Experience: {singlePokemon.base_experience}</p>
             </div>
-
-            <h2 className="text-2xl mb-10">{singlePokemon.name}</h2>
-            <p>Height:{singlePokemon.height}</p>
-            <p>Weight:{singlePokemon.weight}</p>
-            <p>Base Experience: {singlePokemon.base_experience}</p>
-            <p>ID:{singlePokemon.id}</p>
 
             <div className="flex flex-row ">
               <img
