@@ -22,7 +22,8 @@ export function Pokemon({ setSelectedPokemon }) {
         console.log("More Details:", pokemonData);
         return {
           name: pokemonData.name,
-          image: pokemonData.sprites.front_default,
+          image: pokemonData.sprites.front_shiny,
+          backImage: pokemonData.sprites.back_shiny,
           height: pokemonData.height,
           weight: pokemonData.weight,
           base_experience: pokemonData.base_experience,
@@ -71,6 +72,7 @@ export function Pokemon({ setSelectedPokemon }) {
                   weight={pokemon.weight}
                   base_experience={pokemon.base_experience}
                   image={pokemon.image}
+                  backImage={pokemon.backImage}
                   setSelectedPokemon={setSelectedPokemon}
                 />
               ))}
