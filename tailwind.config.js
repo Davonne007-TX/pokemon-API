@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        orb: "'Orbitron', sans-serif",
+      },
       colors: {
         bright: "#ffde00",
         blueBright: "#3b4cca;",
