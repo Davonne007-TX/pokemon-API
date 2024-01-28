@@ -17,3 +17,7 @@
 .animate-360 {
   animation: spin 5s linear infinite;
 }
+
+.bg-single {
+  background-image: linear-gradient(#ffff, #3b4cca, #ffde00);
+}

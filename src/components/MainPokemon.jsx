@@ -42,17 +42,17 @@ export function MainPokemon({
     <div className="our-pokemon flex flex-col justify-center items-center">
       <div>
         {" "}
-        <h2 className="text-2xl">{name.toUpperCase()}</h2>
+        <h2 className="text-3xl text-white">{name.toUpperCase()}</h2>
       </div>
       <div>
         {" "}
-        <img src={image} className="bg-bright mt-10" />
+        <img src={image} className="mt-10" />
       </div>
       <div>
         {" "}
         <button
           type="button"
-          className="hover:text-bright mt-8 text-lg font-mono"
+          className="bg-white rounded-full p-2 hover:text-red text-blueBright mt-8 text-lg font-mono"
           onClick={pokemonDetails}
         >
           See Details
