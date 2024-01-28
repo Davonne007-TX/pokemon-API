@@ -5,3 +5,15 @@
 .bg-image {
   background-image: url("/images/sky.jpg");
 }
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+.animate-360 {
+  animation: spin 5s linear infinite;
+}
