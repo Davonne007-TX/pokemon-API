@@ -50,7 +50,7 @@ export function Pokemon({ setSelectedPokemon }) {
   return (
     <>
       {allPokemonData.length > 0 && (
-        <div>
+        <div className="bg-gray-200">
           <div className="max-w-xl mr-auto ml-auto ">
             <SearchBar
               value={searchedPokemon}
