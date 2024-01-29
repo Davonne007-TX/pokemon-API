@@ -18,7 +18,11 @@ export default function SinglePokemon({ pokemon }) {
   }, [pokemon]);
 
   if (!pokemon) {
-    return <div>Pokemon is loading...</div>;
+    return (
+      <div className="font-orb text-6xl flex justify-center items-center h-screen">
+        Choose a new Pokemon at Pokedex...
+      </div>
+    );
   }
   return (
     <>
