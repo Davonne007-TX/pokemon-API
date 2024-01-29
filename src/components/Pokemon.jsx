@@ -54,7 +54,10 @@ export function Pokemon({ setSelectedPokemon }) {
   return (
     <>
       {allPokemonData.length > 0 && (
-        <div className="bg-darkBlue">
+        <div className="bg-darkBlue flex flex-col">
+          <div className="w-44 flex">
+            <img src="images/pika.png" />
+          </div>
           <div className="max-w-xl mr-auto ml-auto ">
             {/* search bar component  */}
             <SearchBar

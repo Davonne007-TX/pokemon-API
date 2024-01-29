@@ -17,10 +17,9 @@ export default function TopHeader() {
         >
           Pokemon For Life
         </h1>
-
         <Link to="/pokemon" className="h2 text-blueBright hover:text-bright">
           Pokédex
-        </Link>
+        </Link>{" "}
       </div>
     </>
   );

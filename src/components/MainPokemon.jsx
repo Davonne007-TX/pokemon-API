@@ -46,7 +46,7 @@ export function MainPokemon({
       </div>
       <div>
         {" "}
-        <img src={image} className="mt-10" />
+        <img src={image} className="mt-10 bg-black rounded-full" />
       </div>
       <div>
         {" "}
