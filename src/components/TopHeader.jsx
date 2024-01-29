@@ -20,6 +20,11 @@ export default function TopHeader() {
         <Link to="/pokemon" className="h2 text-blueBright hover:text-bright">
           Pokédex
         </Link>{" "}
+        <div className="w-20 flex justify-center items-center">
+          <img src="images/snorlax.png" />
+          <img src="images/pika.png" />
+          <img src="images/duck.png" />
+        </div>
       </div>
     </>
   );
