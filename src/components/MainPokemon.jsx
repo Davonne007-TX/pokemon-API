@@ -35,7 +35,7 @@ export function MainPokemon({
   }
 
   return (
-    <div className="our-pokemon flex flex-col justify-center items-center">
+    <section className="our-pokemon flex flex-col justify-center items-center">
       <div>
         {" "}
         <h2 className="text-3xl text-bright">{name.toUpperCase()}</h2>
@@ -57,6 +57,6 @@ export function MainPokemon({
           See Details
         </button>
       </div>
-    </div>
+    </section>
   );
 }

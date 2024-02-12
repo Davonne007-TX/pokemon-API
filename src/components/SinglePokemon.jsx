@@ -28,7 +28,7 @@ export default function SinglePokemon({ pokemon }) {
 
   return (
     <>
-      <div className="bg-image flex justify-center items-center h-screen bg-cover">
+      <section className="bg-image flex justify-center items-center h-screen bg-cover">
         <div className="bg-single m-5 max-w-full md:w-96 lg:max-w-full rounded-3xl border-8 border-blueBright">
           <div className="flex flex-col ml-3 md:ml-5 mt-3 md:mt-5 mb-3 md:mb-5 font-mono">
             <div className="flex flex-row">
@@ -72,7 +72,7 @@ export default function SinglePokemon({ pokemon }) {
             </button>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

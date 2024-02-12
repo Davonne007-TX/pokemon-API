@@ -76,7 +76,7 @@ export function Pokemon({ setSelectedPokemon }) {
   return (
     <>
       {allPokemonData.length > 0 && (
-        <div className="bg-darkBlue flex flex-col">
+        <section className="bg-darkBlue flex flex-col">
           <div className="max-w-xl mr-auto ml-auto ">
             {/* search bar component  */}
             <SearchBar
@@ -107,7 +107,7 @@ export function Pokemon({ setSelectedPokemon }) {
               ))}
             </div>
           </div>
-        </div>
+        </section>
       )}
     </>
   );
