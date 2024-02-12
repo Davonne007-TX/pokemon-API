@@ -41,8 +41,8 @@ export default function SinglePokemon({ pokemon }) {
 
       {!loading && (
         <section className="bg-image flex justify-center items-center h-screen bg-cover">
-          <div className="mb-40">
-            <div className="bg-single p-2 max-w-full md:w-96 lg:max-w-full rounded-3xl border-8 border-blueBright">
+          <div className="mt-10 lg:mb-40">
+            <div className="bg-single m-4 lg:p-2 max-w-full md:w-96 lg:max-w-full rounded-3xl border-8 border-blueBright">
               <div className="flex flex-col ml-3 md:ml-5 mt-3 md:mt-5 mb-3 md:mb-5 font-mono">
                 <div className="flex flex-row">
                   <h2 className="text-2xl md:text-4xl mb-3 md:mb-5">
