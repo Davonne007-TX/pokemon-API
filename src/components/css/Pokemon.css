@@ -7,7 +7,7 @@
 /*mainPokemon component*/
 .our-pokemon {
   /* background-image: linear-gradient(#ffff, #3b4cca, #ffde00); */
-  background-image: url("images/cards.jpg");
+  background-image: url("./cards.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border: 5px solid navy;
