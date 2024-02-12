@@ -12,14 +12,14 @@ export function Pokemon({ setSelectedPokemon }) {
   const getPokemon = async () => {
     try {
       const response = await fetch(
-        "https://pokeapi.co/api/v2/pokemon?limit=30"
+        "https://pokeapi.co/api/v2/pokemon?limit=50"
       );
       const data = await response.json();
 
       const promises = data.results.map(async (pokemon) => {
         const pokemonResponse = await fetch(pokemon.url);
         const pokemonData = await pokemonResponse.json();
-        console.log("More Details:", pokemonData);
+        // console.log("More Details:", pokemonData);
 
         //fetch official artwork
         const officialArtWork = await fetch(
