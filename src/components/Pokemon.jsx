@@ -21,13 +21,33 @@ export function Pokemon({ setSelectedPokemon }) {
         const pokemonData = await pokemonResponse.json();
         console.log("More Details:", pokemonData);
 
+        //fetch official artwork
+        const officialArtWork = await fetch(
+          pokemonData.sprites.other["official-artwork"].front_default
+        );
+        const artWorkData = await officialArtWork.blob();
+
+        // Convert blob to data URL
+        const image = await new Promise((resolve) => {
+          const reader = new FileReader();
+          reader.onloadend = () => resolve(reader.result);
+          reader.readAsDataURL(artWorkData);
+        });
+
+        // Fetch abilities
+        const abilities = pokemonData.abilities.map(
+          (ability) => ability.ability.name
+        );
+
         return {
           name: pokemonData.name,
-          image: pokemonData.sprites.front_shiny,
+          // image: pokemonData.sprites.front_shiny,
+          image: image,
           backImage: pokemonData.sprites.back_shiny,
           height: pokemonData.height,
           weight: pokemonData.weight,
           base_experience: pokemonData.base_experience,
+          abilities: abilities,
           order: pokemonData.order,
           species: pokemonData.species.name,
           id: pokemonData.id,
@@ -76,6 +96,7 @@ export function Pokemon({ setSelectedPokemon }) {
                   height={pokemon.height}
                   weight={pokemon.weight}
                   base_experience={pokemon.base_experience}
+                  abilities={pokemon.abilities}
                   order={pokemon.order}
                   species={pokemon.species}
                   id={pokemon.id}

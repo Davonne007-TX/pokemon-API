@@ -31,19 +31,6 @@ export function MainPokemon({
       id,
     });
 
-    setSelectedPokemon({
-      name,
-      image,
-      height,
-      weight,
-      base_experience,
-      order,
-      abilities,
-      species,
-      id,
-      backImage,
-    });
-
     navigate("/singlePokemon");
   }
 
@@ -51,13 +38,13 @@ export function MainPokemon({
     <div className="our-pokemon flex flex-col justify-center items-center">
       <div>
         {" "}
-        <h2 className="text-3xl text-white">{name.toUpperCase()}</h2>
+        <h2 className="text-3xl text-bright">{name.toUpperCase()}</h2>
       </div>
       <div>
         {" "}
         <img
           src={image}
-          className="mt-20 w-20 ml-5 bg-white border-8 border-black rounded-full"
+          className="w-20 mt-20 ml-4 bg-white border-8 border-black rounded-full"
         />
       </div>
       <div>
