@@ -34,8 +34,10 @@ export default function SinglePokemon({ pokemon }) {
   return (
     <>
       {loading && (
-        <div className="loading text-center mt-48 h-screen mb-40 text-7xl text-bright">
-          Loading...
+        <div className="flex flex-col h-screen mt-10 bg-slate-800">
+          <div className="loading text-center mt-48 h-screen mb-40 text-7xl text-bright">
+            Loading...
+          </div>
         </div>
       )}
 
