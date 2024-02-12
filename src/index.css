@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .bg-image {
-  background-image: url("/images/sky.jpg");
+  background-image: url("sky.jpg");
 }
 @keyframes spin {
   0% {
