@@ -19,5 +19,5 @@
 }
 
 .bg-single {
-  background-image: linear-gradient(#ffff, #3b4cca, #ffde00);
+  background-image: linear-gradient(#ffff, #3b4cca, white);
 }
