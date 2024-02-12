@@ -28,6 +28,8 @@ export function Pokemon({ setSelectedPokemon }) {
           height: pokemonData.height,
           weight: pokemonData.weight,
           base_experience: pokemonData.base_experience,
+          order: pokemonData.order,
+          species: pokemonData.species.name,
           id: pokemonData.id,
         };
       });
@@ -74,6 +76,8 @@ export function Pokemon({ setSelectedPokemon }) {
                   height={pokemon.height}
                   weight={pokemon.weight}
                   base_experience={pokemon.base_experience}
+                  order={pokemon.order}
+                  species={pokemon.species}
                   id={pokemon.id}
                   image={pokemon.image}
                   backImage={pokemon.backImage}

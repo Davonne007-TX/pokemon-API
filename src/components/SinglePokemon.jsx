@@ -44,6 +44,9 @@ export default function SinglePokemon({ pokemon }) {
               <p>Height:{singlePokemon.height}</p>
               <p>Weight:{singlePokemon.weight}</p>
               <p>Base Experience: {singlePokemon.base_experience}</p>
+              <p>Order: {singlePokemon.order}</p>
+              <p>Abilities: {singlePokemon.abilities}</p>
+              <p>Species:{singlePokemon.species}</p>
               <p>ID: {singlePokemon.id}</p>
             </div>
 

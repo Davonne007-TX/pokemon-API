@@ -9,6 +9,9 @@ export function MainPokemon({
   height,
   weight,
   base_experience,
+  order,
+  abilities,
+  species,
   backImage,
   id,
 }) {
@@ -20,7 +23,10 @@ export function MainPokemon({
       image,
       height,
       weight,
+      species,
       base_experience,
+      order,
+      abilities,
       backImage,
       id,
     });
@@ -31,6 +37,9 @@ export function MainPokemon({
       height,
       weight,
       base_experience,
+      order,
+      abilities,
+      species,
       id,
       backImage,
     });
@@ -46,13 +55,16 @@ export function MainPokemon({
       </div>
       <div>
         {" "}
-        <img src={image} className="mt-10 bg-black rounded-full" />
+        <img
+          src={image}
+          className="mt-20 w-20 ml-5 bg-white border-8 border-black rounded-full"
+        />
       </div>
       <div>
         {" "}
         <button
           type="button"
-          className="bg-white rounded-full p-2 hover:text-red text-blueBright mt-8 text-lg font-mono"
+          className="bg-white rounded-full p-1 hover:text-red text-blueBright mt-20 text-md font-mono"
           onClick={pokemonDetails}
         >
           See Details
