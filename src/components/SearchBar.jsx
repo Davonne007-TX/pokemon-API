@@ -6,7 +6,7 @@ export function SearchBar({ value, setSearchedPokemon }) {
     setSearchedPokemon(inputSearch);
   };
   return (
-    <div className="mt-10 p-2 font-orb flex justify-center">
+    <section className="mt-10 p-2 font-orb flex justify-center">
       <input
         type="search"
         placeholder="Search For Pokemon"
@@ -14,6 +14,6 @@ export function SearchBar({ value, setSearchedPokemon }) {
         value={value}
         className="focus:outline-none bg-bright p-3 rounded-full mt-10"
       />
-    </div>
+    </section>
   );
 }

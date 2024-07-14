@@ -35,28 +35,20 @@ export function MainPokemon({
   }
 
   return (
-    <section className="our-pokemon flex flex-col justify-center items-center">
-      <div>
-        {" "}
-        <h2 className="text-3xl text-bright">{name.toUpperCase()}</h2>
-      </div>
-      <div>
-        {" "}
-        <img
-          src={image}
-          className="w-20 mt-20 ml-4 bg-white border-8 border-black rounded-full"
-        />
-      </div>
-      <div>
-        {" "}
-        <button
-          type="button"
-          className="bg-white rounded-full p-1 hover:text-red text-blueBright mt-20 text-md font-mono"
-          onClick={pokemonDetails}
-        >
-          See Details
-        </button>
-      </div>
-    </section>
+    <main className="our-pokemon flex flex-col justify-center items-center">
+      {" "}
+      <h2 className="text-3xl text-bright">{name.toUpperCase()}</h2>{" "}
+      <img
+        src={image}
+        className="w-20 mt-20 ml-4 bg-white border-8 border-black rounded-full"
+      />{" "}
+      <button
+        type="button"
+        className="bg-white rounded-full p-1 hover:text-red text-blueBright mt-20 text-md font-mono"
+        onClick={pokemonDetails}
+      >
+        See Details
+      </button>
+    </main>
   );
 }

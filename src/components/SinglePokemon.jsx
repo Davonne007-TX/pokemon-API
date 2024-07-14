@@ -42,24 +42,24 @@ export default function SinglePokemon({ pokemon }) {
       )}
 
       {!loading && (
-        <section className="bg-image flex justify-center items-center h-screen bg-cover">
-          <div className="mt-10 lg:mb-40">
-            <div className="bg-single m-4 lg:p-2 max-w-full md:w-96 lg:max-w-full rounded-3xl border-8 border-blueBright">
-              <div className="flex flex-col ml-3 md:ml-5 mt-3 md:mt-5 mb-3 md:mb-5 font-mono">
-                <div className="flex flex-row">
+        <main className="bg-image flex justify-center items-center h-screen bg-cover">
+          <section className="mt-10 lg:mb-40">
+            <section className="bg-single m-4 lg:p-2 max-w-full md:w-96 lg:max-w-full rounded-3xl border-8 border-blueBright">
+              <section className="flex flex-col ml-3 md:ml-5 mt-3 md:mt-5 mb-3 md:mb-5 font-mono">
+                <section className="flex flex-row">
                   <h2 className="text-2xl md:text-4xl mb-3 md:mb-5">
                     {singlePokemon.name}
                   </h2>
-                  <div className="ml-auto">
+                  <section className="ml-auto">
                     <img
                       src={singlePokemon.backImage}
                       alt="Pokemon Selected Image"
                       className="max-w-40 h-auto ml-auto mr-auto animate-360"
                     />
-                  </div>
-                </div>
+                  </section>
+                </section>
 
-                <div className="text-xl font-mono">
+                <section className="text-xl font-mono">
                   <p>Height: {singlePokemon.height}</p>
                   <p>Weight: {singlePokemon.weight}</p>
                   <p>Base Exp: {singlePokemon.base_experience}</p>
@@ -70,15 +70,15 @@ export default function SinglePokemon({ pokemon }) {
                   </p>
                   <p>Species: {singlePokemon.species}</p>
                   <p>ID: {singlePokemon.id}</p>
-                </div>
+                </section>
 
-                <div className="flex flex-row mt-2 md:mt-3">
+                <section className="flex flex-row mt-2 md:mt-3">
                   <img
                     src={singlePokemon.image}
                     alt="Pokemon Selected Image"
                     className="max-w-full ml-auto mr-auto h-32 w-32 md:h-60 md:w-60"
                   />
-                </div>
+                </section>
 
                 <button
                   className="hover:text-red cursor-pointer font-mono mt-2 md:mt-5"
@@ -86,10 +86,10 @@ export default function SinglePokemon({ pokemon }) {
                 >
                   Back To Pokedex
                 </button>
-              </div>
-            </div>
-          </div>
-        </section>
+              </section>
+            </section>
+          </section>
+        </main>
       )}
     </>
   );

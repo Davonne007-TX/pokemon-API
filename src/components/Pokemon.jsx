@@ -76,16 +76,16 @@ export function Pokemon({ setSelectedPokemon }) {
   return (
     <>
       {allPokemonData.length > 0 && (
-        <section className="bg-darkBlue flex flex-col">
-          <div className="max-w-xl mr-auto ml-auto ">
+        <main className="bg-darkBlue flex flex-col">
+          <section className="max-w-xl mr-auto ml-auto ">
             {/* search bar component  */}
             <SearchBar
               value={searchedPokemon}
               setSearchedPokemon={setSearchedPokemon}
             />
-          </div>
-          <div className="flex justify-center items-center mt-2">
-            <div
+          </section>
+          <section className="flex justify-center items-center mt-2">
+            <section
               className="pokemon-container flex flex-wrap bg-blueBright mt-10 border-8 border-white gap-10 p-5 rounded-2xl"
               key="pokemon.url"
             >
@@ -105,9 +105,9 @@ export function Pokemon({ setSelectedPokemon }) {
                   setSelectedPokemon={setSelectedPokemon}
                 />
               ))}
-            </div>
-          </div>
-        </section>
+            </section>
+          </section>
+        </main>
       )}
     </>
   );

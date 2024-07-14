@@ -10,7 +10,7 @@ export default function TopHeader() {
 
   return (
     <>
-      <div className="w-full flex flex-col justify-center items-center mt-8">
+      <section className="w-full flex flex-col justify-center items-center mt-8">
         <h1
           onClick={goToHomePage}
           className="text-4xl mb-8 animate-pulse hover:text-bright hover:underlaine cursor-pointer"
@@ -25,7 +25,7 @@ export default function TopHeader() {
           <img src="images/pika.png" />
           <img src="images/duck.png" />
         </div>
-      </div>
+      </section>
     </>
   );
 }
